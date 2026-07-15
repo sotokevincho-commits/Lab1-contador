@@ -1,0 +1,84 @@
+/* Reseteo básico de márgenes y paddings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Centrado completo de la tarjeta en la pantalla */
+body {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Tarjeta del contenedor principal */
+.contenedor-contador {
+  background-color: #16213e;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo por defecto del número grande del contador */
+#numero {
+  font-size: 10rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 20px 0;
+  transition: all 0.5s ease; /* Permite que el cambio de color a 10 sea suave */
+}
+
+/* CLASE ESPECIAL: Se activa desde lab1.js cuando el valor es exactamente 10 */
+#numero.limite {
+  color: #001aff; /* Un rosa brillante neón espectacular */
+  text-shadow: 0 0 15px rgb(255, 123, 0); /* Efecto de resplandor */
+  transform: scale(1.2); /* Crece un 10% para llamar más la atención */
+}
+
+/* Contenedor horizontal de los dos botones */
+.botones {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilos de los botones del contador */
+.btn {
+  flex: 1;
+  padding: 14px;
+  background: #0f3460;
+  color: white;
+  border: 2px solid #a29bfe;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efecto hover interactivo al pasar el mouse por encima */
+.btn:hover {
+  background: linear-gradient(135deg, #15ff0098, #15ff0098);
+  border-color: transparent;
+  box-shadow: 0 0px 15px rgb(255, 0, 0);
+}
